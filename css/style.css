@@ -307,7 +307,6 @@ a {
 }
 
 .review-desc h3 {
-	/* text-align: center; */
 	margin-left: 120px;
 	font-family: 'Caveat';
 	font-weight: 700;
@@ -324,3 +323,104 @@ a {
 	background-color: #f38181;
 }
 /* Review Section End */
+
+/* Team Section Start */
+#team {
+	margin: 60px 0;
+}
+
+.team-wrapper {
+	position: relative;
+}
+
+.team-wrapper a {
+	width: 100%;
+}
+
+.team-wrapper::after {
+	position: absolute;
+	content: '';
+	height: 50%;
+	width: 100%;
+	background: linear-gradient(rgba(239, 140, 138, 0.91), rgba(239, 212, 133, 0.849));
+	left: 0;
+	top: 0;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+}
+
+.team-wrapper:hover:after {
+	height: 100%;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+}
+
+.team-icon {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	opacity: 0;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	z-index: 1;
+}
+
+.team-wrapper:hover .team-icon {
+	opacity: 1;
+	width: 100%;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+}
+
+.team-icon a {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 50px;
+	width: 40px;
+	font-size: 20px;
+	color: #f38181;
+	text-align: center;
+	background-color: #fce38a;
+	line-height: 50px;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	gap: 30px;
+}
+.team-icon a:hover {
+	color: #ffffff;
+	background-color: #f38181;
+}
+/* Team Section End */
